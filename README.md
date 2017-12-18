@@ -72,7 +72,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 wcss = []
 for i in range(1, 11):
-    kmeans = KMeans(n_clusters = i, random_state = 42)
+    kmeans = KMeans(n_clusters = i, random_state = 0)
     kmeans.fit(X)
     wcss.append(kmeans.inertia_)
 plt.plot(range(1, 11), wcss)
