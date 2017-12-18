@@ -85,8 +85,8 @@ kmeans = KMeans(n_clusters = 3, random_state = 0)
 y_kmeans = kmeans.fit_predict(X)
 
 # Visualising the clusters
-plt.scatter(X[y_kmeans == 0, 0], X[y_kmeans == 0, 1], s = 100, c = 'red', label = 'Cluster 1')
-plt.scatter(X[y_kmeans == 1, 0], X[y_kmeans == 1, 1], s = 100, c = 'blue', label = 'Cluster 2')
-plt.scatter(X[y_kmeans == 2, 0], X[y_kmeans == 2, 1], s = 100, c = 'green', label = 'Cluster 3')
-plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 300, c = 'yellow', label = 'Centroids')
+plt.scatter(X[y_kmeans == 0, 0], X[y_kmeans == 0, 1], c = 'red')
+plt.scatter(X[y_kmeans == 1, 0], X[y_kmeans == 1, 1], c = 'blue')
+plt.scatter(X[y_kmeans == 2, 0], X[y_kmeans == 2, 1], c = 'green')
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 100, c = 'yellow')
 ```
