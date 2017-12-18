@@ -1,6 +1,6 @@
 # SVM-demo
 
-```{python warning=FALSE, message = FALSE}
+```python
 # Importing the libraries
 import pandas as pd
 
