@@ -62,9 +62,6 @@ print(accuracy2)
 # K means-demo
 
 ```python
-# Importing the libraries
-import matplotlib.pyplot as plt
-
 # Importing the dataset
 from sklearn.datasets import load_iris
 iris = load_iris()
@@ -72,6 +69,7 @@ X = iris.data
 
 # Using the elbow method to find the optimal number of clusters
 from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 wcss = []
 for i in range(1, 11):
     kmeans = KMeans(n_clusters = i, random_state = 42)
