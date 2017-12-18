@@ -1,6 +1,6 @@
 # SVM-demo
 
-
+```{python warning=FALSE, message = FALSE}
 # Importing the libraries
 import pandas as pd
 
@@ -58,3 +58,4 @@ cm2 = confusion_matrix(y_test, y_pred2)
 print(cm2)
 accuracy2 = accuracy_score(y_test, y_pred2)
 print(accuracy2)
+```
